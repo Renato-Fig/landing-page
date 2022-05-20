@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #0d0d0d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #060B1F;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Estilização #header */
+#header {
+    background-color: #060B1F;
+    height: 80vh;
+    position: relative;
+}
+
+.banner-text {
+    width: 40%;
+    position: absolute;
+    transform: translateY(50%);
+    bottom: 50%;
+}
+
+.banner-text h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: #fff;
+}
+
+.banner-text p {
+    color: #fff;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.banner-text a {
+    background-color: #3b60e4;
+}
+
+.banner-text a:hover {
+    background-color: #fff;
+    color: #3b60e4;
+}
+
+#mockup {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+}
+
+/**/
+#section-a {
+    background-color: #3b60e4;
+}
+
+#section-a p {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*#section-b*/
+.box-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.icon-cards {
+    width: 80px;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* #section-c */
+#section-c {
+    background-color: #f5f5f5;
+}
+
+/* #section-d */
+.main-card {
+    background-color: #f5f5f5;
+    width: 400px;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.main-card h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#benefits-group {
+    list-style-position: inside;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.benefits-item::marker {
+    content: '▶';
+    color: #3b60e4;
+    padding-right: 10px;
+}
+
+.benefits-item {
+    margin-bottom: 10px;
+}
+
+#box-value p {
+    text-align: center;
+    font-weight: 500;
+}
+
+#box-value del, #box-value strong {
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+#box-value strong {
+    font-size: 2.5em;
+}
+
+.main-card a {
+    background-color: #00a400;
+    display: block;
+    text-align: center;
+}
+
+.main-card a:hover {
+    background-color: #fff;
+    color: #00a400;
+}
+
+.main-card small {
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+/* #section-e */
+#section-e {
+    background-color: #f5f5f5;
+}
+
+.faq-item {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+.faq-title {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.faq-text {
+    padding: 10px 0 0 24px;
+}
+
+.faq-text, 
+#faq-group input, 
+.fa-caret-down {
+    display: none;
+} 
+
+.trigger-input:checked + .faq-content .faq-text {
+    display: block;
+} 
+
+.trigger-input:checked + .faq-content .fa-caret-down {
+    display: inline;
+}
+
+.trigger-input:checked + .faq-content .fa-caret-right {
+    display: none;
+}
+
+.trigger-input:checked + .faq-content .faq-title, 
+.trigger-input:checked + .faq-content span {
+    color: #3b60e4;
+} 
+
+/* #footer*/
+#footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 30px;
+}
+
+#footer p {
+    font-size: 0.75em;
+    color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .banner-text {
+        width: auto;
+    }
+
+    .box-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+
+@media screen and (max-width: 450px) {
+    .banner-text {
+        width: auto;
+    }
+
+    #mockup {
+        width: 80vw;
+        display: block;
+    }
+
+    .box-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .main-card {
+        width: auto;
+        
+    }
+}
