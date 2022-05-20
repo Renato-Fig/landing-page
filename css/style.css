@@ -138,15 +138,16 @@ a {
 }
 
 #benefits-group {
-    list-style-position: inside;
+    list-style-position: outside;
     line-height: 1.5;
     margin: 20px 0;
+    background-color: red;
 }
 
 .benefits-item::marker {
     content: '▶';
     color: #3b60e4;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .benefits-item {
@@ -275,6 +276,5 @@ a {
 
     .main-card {
         width: auto;
-        
     }
 }
